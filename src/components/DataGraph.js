@@ -17,7 +17,7 @@ class DataGraph extends React.Component {
         var axes = {}, ctx = canvas.getContext("2d");
         axes.x0 = .5 + .5 * canvas.width;  // x0 pixels from left to x=0
         axes.y0 = .5 + .5 * canvas.height; // y0 pixels from top to y=0
-        axes.scale = 40;                 // 40 pixels from x=0 to x=1
+        axes.scale = 100;                 // 40 pixels from x=0 to x=1
         axes.doNegativeX = true;
 
         this.showAxes(ctx, axes);
@@ -25,7 +25,7 @@ class DataGraph extends React.Component {
     }
 
     funGraph(ctx, axes, func, color, thick) {
-        var xx, yy, dx = 4, x0 = axes.x0, y0 = axes.y0, scale = axes.scale;
+        var xx, yy, dx = 1, x0 = axes.x0, y0 = axes.y0, scale = axes.scale;
         var iMax = Math.round((ctx.canvas.width - x0) / dx);
         var iMin = axes.doNegativeX ? Math.round(-x0 / dx) : 0;
         ctx.beginPath();
@@ -33,9 +33,13 @@ class DataGraph extends React.Component {
         ctx.strokeStyle = color;
 
         for (var i = iMin; i <= iMax; i++) {
-            xx = dx * i; yy = scale * func(xx / scale);
+            xx = dx * i; yy = 0.5 * scale * func(xx / scale);
             if (i === iMin) ctx.moveTo(x0 + xx, y0 - yy);
             else ctx.lineTo(x0 + xx, y0 - yy);
+            if (Math.abs((xx / scale)) % 1 < 0.001) {
+                ctx.font = "10px Arial";
+                ctx.fillText(Math.round(xx / scale), x0 + xx, y0 + 10);
+            }
         }
         ctx.stroke();
     }
