@@ -1,6 +1,6 @@
 # Fourier Transform Visualizer
 
-You can view this project at https://maslenj.github.io/fourier-visualizer/.
+This project can be viewed at https://maslenj.github.io/fourier-visualizer/.
 
 ## About
 
