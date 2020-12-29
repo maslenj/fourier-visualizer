@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fourier-visualizer/static/css/main.bad79cd3.chunk.css",
+    "main.js": "/fourier-visualizer/static/js/main.09679ef4.chunk.js",
+    "main.js.map": "/fourier-visualizer/static/js/main.09679ef4.chunk.js.map",
+    "runtime-main.js": "/fourier-visualizer/static/js/runtime-main.013df11c.js",
+    "runtime-main.js.map": "/fourier-visualizer/static/js/runtime-main.013df11c.js.map",
+    "static/js/2.b101340f.chunk.js": "/fourier-visualizer/static/js/2.b101340f.chunk.js",
+    "static/js/2.b101340f.chunk.js.map": "/fourier-visualizer/static/js/2.b101340f.chunk.js.map",
+    "static/js/3.1051ca81.chunk.js": "/fourier-visualizer/static/js/3.1051ca81.chunk.js",
+    "static/js/3.1051ca81.chunk.js.map": "/fourier-visualizer/static/js/3.1051ca81.chunk.js.map",
+    "index.html": "/fourier-visualizer/index.html",
+    "static/css/main.bad79cd3.chunk.css.map": "/fourier-visualizer/static/css/main.bad79cd3.chunk.css.map",
+    "static/js/2.b101340f.chunk.js.LICENSE.txt": "/fourier-visualizer/static/js/2.b101340f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.013df11c.js",
+    "static/js/2.b101340f.chunk.js",
+    "static/css/main.bad79cd3.chunk.css",
+    "static/js/main.09679ef4.chunk.js"
+  ]
+}
